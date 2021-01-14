@@ -1,0 +1,49 @@
+﻿@page "/" 
+
+<h1>Web Worker</h1>
+
+<button class="btn btn-primary" @onclick="Start">Start</button>
+<button class="btn btn-primary" @onclick="Stop">Stop</button>
+<button class="btn btn-primary" @onclick="Clear">Clear</button>
+
+@foreach (var item in Items)
+{
+    <div>@item</div>
+}
+
+@code {
+
+    [Inject] public IWorker Worker { get; set; }
+
+    public List<string> Items { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Items = new List<string>();
+
+        this.Worker.Message += (o) =>
+        {
+            Items.Insert(0, o.ToString());
+            this.StateHasChanged();
+        };
+
+        this.Worker.Error += (o) =>
+        {
+            Items.Insert(0, o.ToString());
+            this.StateHasChanged();
+        };
+
+        this.Worker.Terminate += ( ) =>
+        {
+            Items.Insert(0, "Terminate");
+            this.StateHasChanged();
+        };
+    }
+
+    async Task Start() => await this.Worker.Start("./demo_workers.js");
+
+    async Task Stop() => await this.Worker.Stop();
+
+    void Clear() => Items.Clear();
+
+}

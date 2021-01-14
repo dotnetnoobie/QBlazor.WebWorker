@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QBlazor.WebWorker.Demo", "QBlazor.WebWorker.Demo\QBlazor.WebWorker.Demo.csproj", "{A1AFE19F-47CB-4C8E-BE81-FC60C9E62A21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QBlazor.WebWorker", "QBlazor.WebWorker\QBlazor.WebWorker.csproj", "{52B1C440-137E-48DD-90AC-3F5326E2E08D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1AFE19F-47CB-4C8E-BE81-FC60C9E62A21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1AFE19F-47CB-4C8E-BE81-FC60C9E62A21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1AFE19F-47CB-4C8E-BE81-FC60C9E62A21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1AFE19F-47CB-4C8E-BE81-FC60C9E62A21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52B1C440-137E-48DD-90AC-3F5326E2E08D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52B1C440-137E-48DD-90AC-3F5326E2E08D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52B1C440-137E-48DD-90AC-3F5326E2E08D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52B1C440-137E-48DD-90AC-3F5326E2E08D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50C23C7D-2BF0-4F41-B40A-0D50A28DF53D}
+	EndGlobalSection
+EndGlobal
